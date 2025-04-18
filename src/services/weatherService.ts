@@ -7,7 +7,6 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5";
 export const weatherService = {
   // Get current weather data by city name
   getCurrentWeather: async (city: string, units: string = "metric"): Promise<WeatherData> => {
-console.log("🚀 ~ API_KEY:", API_KEY)
 
     try {
       const response = await axios.get(`${BASE_URL}/weather`, {
